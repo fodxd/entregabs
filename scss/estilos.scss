@@ -1,0 +1,106 @@
+$color: black .columns {
+  border: 10px $color;
+}
+@mixin flex {
+  display: flex;
+}
+
+.carouselll {
+  @include flex;
+  justify-content: center;
+  width: 100vw;
+  img {
+    height: 100vh;
+  }
+}
+
+.cardds {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 15rem;
+  img {
+    height: 350px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .cardds {
+    @include flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}
+
+.forms {
+  margin-top: 5rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  background: transparent;
+  margin-top: 4rem;
+  img {
+    width: 100px;
+  }
+}
+.banner {
+  @include flex;
+  width: 100vh;
+}
+
+.logoo {
+  width: 200px;
+}
+
+body {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 5, 82, 1) 24%,
+    rgba(1, 7, 93, 1) 68%,
+    rgba(0, 0, 0, 1) 91%
+  );
+}
+
+form button {
+  background-color: transparent;
+}
+
+.section-card {
+  @include flex;
+  justify-content: center;
+
+  img {
+    width: 60vw;
+  }
+}
+
+.contact-card {
+  margin-top: 5rem;
+  background-color: transparent !important;
+  border: none;
+}
+
+.formul {
+  @include flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrusel {
+  @include flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.section-clases {
+  display: grid;
+  grid-template-columns: 1 1fr;
+}
